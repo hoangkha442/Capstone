@@ -1,0 +1,26 @@
+git init: khởi tạo dự án (repo local)
+
+- kết nối VSCode và Gitlab 1 lần duy nhất trên 1 máy tính.
+
+- liên kết repo local và repo remote : git remote add origin git_url ~ mỗi dự án làm 1 lần.
+git remote add origin https://gitlab.com/hoangkha442/bc44_git.git - bỏ liên kết git remote rm origin
+
+b1: git config --global user.name "Hoang Kha"
+b2: git config --global user.email "chauhoangkha442@gmail.com"
+
+- Đẩy code lên git
++ đẩy lần đầu
+b1: git add -A : chọn
+b2: git commit -m "Note" : xác thực lại lời nhắn cho nội dung đã code, tạo ra cột mốc(version)
+b3: git pust -u origin master: đẩy code lên gitlab (master is brand)
++ đẩy lần 2 trở đi
+b1, b2: như trên
+b3: git push (đẩy lên) - git pull(lấy về)
+
+
+-BRANCH - nhánh
+git checkout -b newBranch : tạo nhánh có tên newBranch
+git branch: hiển thị các nhánh đang có trong máy
+
+git fetch: đồng bộ(có những nhánh gì)
+git checkout newBranch : chuyển nhánh
