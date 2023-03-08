@@ -4,8 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
-  font-family: "Quicksand", sans-serif;
+html, body{
+  font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -31,9 +32,10 @@ li {
   color: #a5a2a1;
 }
 .dark p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 26px;
-  color: #a5a2a1;
+  color: #c2d0da;
+  font-weight: 400;
 }
 .dark a {
   font-size: 17px;
@@ -61,8 +63,9 @@ p {
   padding: 0;
   font-size: 18px;
   line-height: 28px;
-  color: #a5a2a1;
+  color: #161c2db3;
   font-family: "Quicksand", sans-serif;
+  font-weight: 400;
 }
 
 .btn-white {
@@ -218,6 +221,14 @@ form {
   max-width: 580px;
   text-align: left;
   margin-top: 100px;
+}
+
+.dark .banner_content a{
+  color: white;
+}
+
+.dark .banner_content:hover a{
+  color: #ff6600;
 }
 
 .banner_content h3 {
@@ -549,9 +560,13 @@ form {
   max-width: 800px;
 }
 
+.wellcome__btn a{
+  color: white;
+}
+
 /*****************************STATS************************  */
 .stats {
-  overflow: hidden;
+  overflow: unset;
   margin-top: -70px;
   z-index: 99999;
   position: relative;
@@ -571,6 +586,17 @@ form {
   padding: 40px 20px;
   border-radius: 8px;
   text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats__top{
+  flex-shrink: 0;
+}
+
+.stats__item p{
+  flex: 1;
 }
 
 .dark .stats__item {
@@ -951,6 +977,12 @@ form {
   color: #a5a2a1;
 }
 
+.dark .footer__item p{
+  font-size: 17px;
+  line-height: 26px;
+  color: #a5a2a1 !important;
+}
+
 .footer__item li {
   margin-bottom: 10px;
 }
@@ -1030,6 +1062,43 @@ footer .row {
 
 footer span {
   color: #ff6600;
+}
+
+.dark .footer__item a:hover{
+  color: #ff6600;
+} 
+
+.dark .footer__item a{
+  font-size: 16px;
+  color: #a5a2a1;
+}
+
+/* BACK TO TOP */
+.backtotop{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  visibility: hidden;
+  opacity: 0;    
+}
+
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
+}
+
+.backtotop i{
+  color: #eee;
+  background-color: #ff6600;
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  transition: all .5s;
+  z-index: inherit;
+
 }
 
 /* ************************************RESPONSIVE*************************************************** */
