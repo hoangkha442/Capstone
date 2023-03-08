@@ -227,8 +227,8 @@ form {
   color: white;
 }
 
-.dark .banner_content:hover a{
-  color: #ff6600;
+.dark .banner_content .btn-white:hover a{
+  color: #ff6600 !important;
 }
 
 .banner_content h3 {
@@ -251,9 +251,10 @@ form {
 .btn-white:hover {
   background: #fff;
   border: 2px solid #fff;
-  color: orangered;
+  color: orangered !important;
   text-decoration: none;
 }
+
 
 /* .row {
   display: flex;
@@ -960,6 +961,8 @@ form {
 .owl-theme .owl-dots .owl-dot:hover span {
   background-color: #ff6600;
 }
+
+
 
 /* FOOTER CONTACT */
 .footer__contact {
