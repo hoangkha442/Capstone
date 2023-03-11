@@ -639,7 +639,7 @@ form {
 
 /*****************************NEW************************  */
 .video {
-  overflow: hidden;
+  overflow: unset;
 }
 .video__main {
   background: url(/img/banner3.jpg) no-repeat center;
@@ -1083,6 +1083,7 @@ footer span {
   bottom: 50px;
   visibility: hidden;
   opacity: 0;    
+  z-index: 99999999999;
 }
 
 .cd-top--is-visible { 
@@ -1091,6 +1092,7 @@ footer span {
 }
 
 .backtotop i{
+  position: relative;
   color: #eee;
   background-color: #ff6600;
   width: 40px;
@@ -1100,8 +1102,6 @@ footer span {
   line-height: 36px;
   border-radius: 50%;
   transition: all .5s;
-  z-index: inherit;
-
 }
 
 /* ************************************RESPONSIVE*************************************************** */
