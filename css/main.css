@@ -979,7 +979,9 @@ form {
 .footer__item {
   color: #a5a2a1;
 }
-
+.footer__item p{
+  color: #a5a2a1 !important;
+}
 .dark .footer__item p{
   font-size: 17px;
   line-height: 26px;
